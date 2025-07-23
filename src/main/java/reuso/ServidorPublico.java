@@ -1,11 +1,13 @@
 /**************************************/
-package org.example;
+package reuso;
 /**************************************/
 
 /*
  * Versão: 1.0
  * Descrição: Classe que representa o Servidor Público.
  */
+
+import java.util.List;
 
 /***************************/
 public class ServidorPublico 
@@ -19,6 +21,15 @@ public class ServidorPublico
     private String lotacao;
     private String email;
     private double salario;
+
+    //REUSO - Associação
+    private List<Curso> cursos;
+
+    //REUSO - Agregação
+    private List<Dependente> dependentes;
+
+    //REUSO - Composição
+    private List<Telefone> telefones;
 
     // Construtor
     public ServidorPublico()
