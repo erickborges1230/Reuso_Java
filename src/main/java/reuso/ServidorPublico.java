@@ -32,7 +32,7 @@ public class ServidorPublico
     private List<Telefone> telefones;
 
     // Construtor
-    public ServidorPublico()
+    public ServidorPublico(int i, String erickBorges, String cpf, String fiscal, String mail, int i1)
     {
     	
     }
@@ -104,7 +104,31 @@ public class ServidorPublico
         this.salario = salario;
     }
 
-	@Override
+    public List<Curso> getCursos() {
+        return cursos;
+    }
+
+    public void setCursos(Curso curso) {
+        this.cursos.add(curso);
+    }
+
+    public List<Dependente> getDependentes() {
+        return dependentes;
+    }
+
+    public void setDependentes(Dependente dependente) {
+        this.dependentes.add(dependente);
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public void setTelefones(Telefone telefone) {
+        this.telefones.add(telefone);
+    }
+
+    @Override
 	public String toString() {
 		return "ServidorPublico [matricula=" + matricula + ", nome=" + nome + ", orgao=" + orgao + ", cargo=" + cargo
 				+ ", lotacao=" + lotacao + ", email=" + email + ", salario=" + salario + "]";
