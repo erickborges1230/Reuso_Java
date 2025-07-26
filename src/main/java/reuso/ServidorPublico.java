@@ -7,7 +7,7 @@ package reuso;
  * Descrição: Classe que representa o Servidor Público.
  */
 
-import java.util.List;
+import java.util.*;
 
 /***************************/
 public class ServidorPublico 
@@ -23,13 +23,13 @@ public class ServidorPublico
     private double salario;
 
     //REUSO - Associação
-    private List<Curso> cursos;
+    private List<Curso> cursos = new LinkedList<Curso>();
 
     //REUSO - Agregação
-    private List<Dependente> dependentes;
+    private List<Dependente> dependentes = new LinkedList<Dependente>();
 
     //REUSO - Composição
-    private List<Telefone> telefones;
+    private List<Telefone> telefones = new LinkedList<Telefone>();
 
     // Construtor
     public ServidorPublico(int i, String erickBorges, String cpf, String fiscal, String mail, int i1)
@@ -104,24 +104,27 @@ public class ServidorPublico
         this.salario = salario;
     }
 
-    public List<Curso> getCursos() {
-        return cursos;
+    public void getCursos() {
+        for (Curso curso: cursos)
+            System.out.println("Curso");
     }
 
     public void setCursos(Curso curso) {
         this.cursos.add(curso);
     }
 
-    public List<Dependente> getDependentes() {
-        return dependentes;
+    public void getDependentes() {
+        for (Dependente dependente: dependentes)
+            System.out.println(dependente);
     }
 
     public void setDependentes(Dependente dependente) {
         this.dependentes.add(dependente);
     }
 
-    public List<Telefone> getTelefones() {
-        return telefones;
+    public void getTelefones() {
+        for (Telefone telefone: telefones)
+            System.out.println(telefone);
     }
 
     public void setTelefones(Telefone telefone) {

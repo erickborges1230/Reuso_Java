@@ -46,4 +46,15 @@ public class Dependente {
     public void setIdade(String idade) {
         this.idade = idade;
     }
+
+    @Override
+    public String toString() {
+        return "Dependente{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", genero='" + genero + '\'' +
+                ", idade='" + idade + '\'' +
+                '}';
+    }
 }
+
