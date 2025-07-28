@@ -4,8 +4,8 @@ public class Estatutario extends ServidorPublico {
 
     private int tempoServico;
     private double salarioBase;
-    public Estatutario(int tempoServico, double salarioBase){
-        super();
+    public Estatutario(int tempoServico, double salarioBase, int matricula, String nome){
+        super(matricula, nome);
         this.tempoServico = tempoServico;
         this.salarioBase = salarioBase;
     }
@@ -24,5 +24,15 @@ public class Estatutario extends ServidorPublico {
 
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
+    }
+
+    @Override
+    public String toString() {
+        return "Estatutario{" +
+                "tempoServico=" + tempoServico +
+                ", salarioBase=" + salarioBase +
+                ", matricula=" + matricula +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }

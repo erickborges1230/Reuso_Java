@@ -14,13 +14,13 @@ public class ServidorPublico
 /***************************/
 {
     //Atributos
-	private int matricula;
-    private String nome;
-    private String orgao;
-    private String cargo;
-    private String lotacao;
-    private String email;
-    private double salario;
+	protected int matricula;
+    protected String nome;
+    protected String orgao;
+    protected String cargo;
+    protected String lotacao;
+    protected String email;
+    protected double salario;
 
     //REUSO - Associação
     private List<Curso> cursos = new LinkedList<Curso>();
@@ -45,6 +45,11 @@ public class ServidorPublico
         this.lotacao = lotacao;
         this.email = email;
         this.salario = salario;
+    }
+
+    public ServidorPublico(int matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
     }
 
     // Getters e Setters
