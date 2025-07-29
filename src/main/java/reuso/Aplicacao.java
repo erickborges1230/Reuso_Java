@@ -18,12 +18,18 @@ public class Aplicacao {
 
         Estatutario Camila = new Estatutario(20, 1000, 2000, "isabela");
         System.out.println(Camila);
+        System.out.println(Camila.matricula);
+        System.out.println(Camila.getMatricula());
 
         Comissionado leandro = new Comissionado(10000, 7000, 2, "Leandro Bastos");
         System.out.println(leandro);
+        System.out.println(leandro.salario);
+        System.out.println(leandro.getSalario());
 
         Temporario luisa = new Temporario(2, 3000, 3, "Luisa Magno");
         System.out.println(luisa);
+        System.out.println(luisa.matricula);
+        System.out.println(luisa.getMatricula());
 
     }
 }

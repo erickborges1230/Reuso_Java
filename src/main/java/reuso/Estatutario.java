@@ -5,7 +5,7 @@ public class Estatutario extends ServidorPublico {
     private int tempoServico;
     private double salarioBase;
     public Estatutario(int tempoServico, double salarioBase, int matricula, String nome){
-        super(matricula, nome);
+        super(matricula, nome); //super() => serve para chamar o construtor da super classe
         this.tempoServico = tempoServico;
         this.salarioBase = salarioBase;
     }
