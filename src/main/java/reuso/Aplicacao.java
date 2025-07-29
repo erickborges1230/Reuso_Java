@@ -33,6 +33,8 @@ public class Aplicacao {
         System.out.println(luisa.calcularSalarioHorasExtras(20)); //Sobrecarga
         System.out.println(luisa.calcularSalarioHorasExtras(30,40)); //Herança
 
+        ServidorPublico pedro = new Temporario(2, 4000, 5, "Pedro Gomes");
+
 
     }
 }

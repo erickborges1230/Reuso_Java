@@ -24,6 +24,7 @@ public class ServidorPublico
     protected double salario;
 
     //REUSO - Associação
+
     private List<Curso> cursos = new LinkedList<Curso>();
 
     //REUSO - Agregação
