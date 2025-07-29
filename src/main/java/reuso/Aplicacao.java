@@ -30,7 +30,9 @@ public class Aplicacao {
         System.out.println(luisa);
         System.out.println(luisa.matricula);
         System.out.println(luisa.getMatricula());
-        System.out.println(luisa.calcularSalarioHorasExtras(20));
+        System.out.println(luisa.calcularSalarioHorasExtras(20)); //Sobrecarga
+        System.out.println(luisa.calcularSalarioHorasExtras(30,40)); //Herança
+
 
     }
 }
