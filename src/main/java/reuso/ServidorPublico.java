@@ -14,6 +14,7 @@ public class ServidorPublico
 /***************************/
 {
     //Atributos
+    private int VALOR_HORAS_EXTRAS = 40;
 	protected int matricula;
     protected String nome;
     protected String orgao;
@@ -30,6 +31,7 @@ public class ServidorPublico
 
     //REUSO - Composição
     private List<Telefone> telefones = new LinkedList<Telefone>();
+
 
     // Construtor
     public ServidorPublico(int i, String erickBorges, String cpf, String fiscal, String mail, int i1)
@@ -134,6 +136,13 @@ public class ServidorPublico
 
     public void setTelefones(Telefone telefone) {
         this.telefones.add(telefone);
+    }
+
+    public final double calcularSalarioHorasExtras(int... horasTrabalhas){
+        double salarioMensal = 0;
+        for(int horasExtras : horasTrabalhas)
+            salarioMensal = salarioMensal + horasExtras*VALOR_HORAS_EXTRAS;
+        return (salario+salarioMensal);
     }
 
     @Override

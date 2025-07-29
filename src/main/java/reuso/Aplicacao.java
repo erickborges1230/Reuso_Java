@@ -30,6 +30,7 @@ public class Aplicacao {
         System.out.println(luisa);
         System.out.println(luisa.matricula);
         System.out.println(luisa.getMatricula());
+        System.out.println(luisa.calcularSalarioHorasExtras(20));
 
     }
 }
