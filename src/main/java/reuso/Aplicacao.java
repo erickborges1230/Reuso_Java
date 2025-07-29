@@ -34,6 +34,8 @@ public class Aplicacao {
         System.out.println(luisa.calcularSalarioHorasExtras(30,40)); //Herança
 
         ServidorPublico pedro = new Temporario(2, 4000, 5, "Pedro Gomes");
+        System.out.println(pedro.calcularSalarioHorasExtras(40));
+        System.out.println(pedro);
 
 
     }
