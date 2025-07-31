@@ -1,8 +1,9 @@
 package reuso.polimorfismo;
 
 import reuso.*;
+import reuso.ApiRest.ApiRestServidor;
 
-public class Polimorfismo {
+public class Polimorfismo implements ApiRestServidor { //
 
     //Operador instanceof
     //Este operador é utilizado para identificar se um determinado objeto pertence a uma hierarquia de classes
@@ -31,5 +32,30 @@ public class Polimorfismo {
         //exemplo= Pai objeto = new Filho();
         System.out.println(((Estatutario)isabela).getTempoServico());
         System.out.println(((Estatutario)isabela).getSalarioBase());
+    }
+
+    @Override //Anulação
+    public void adicionarServidorPublico() {
+
+    }
+
+    @Override
+    public void listarServidoresPublicos() {
+
+    }
+
+    @Override
+    public void listarServidorPublico(int matricula) {
+
+    }
+
+    @Override
+    public void alterarServidorPublico(ServidorPublico servidorAlterado) {
+
+    }
+
+    @Override
+    public void excluirServidorPublico(int matricula) {
+
     }
 }
