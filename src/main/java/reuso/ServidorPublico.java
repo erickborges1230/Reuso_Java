@@ -7,10 +7,13 @@ package reuso;
  * Descrição: Classe que representa o Servidor Público.
  */
 
+import reuso.ClasseAbstract.ClasseAbstract;
+
 import java.util.*;
 
 /***************************/
-public class ServidorPublico 
+public class ServidorPublico
+        extends ClasseAbstract
 /***************************/
 {
     //Atributos
@@ -151,7 +154,17 @@ public class ServidorPublico
 		return "ServidorPublico [matricula=" + matricula + ", nome=" + nome + ", orgao=" + orgao + ", cargo=" + cargo
 				+ ", lotacao=" + lotacao + ", email=" + email + ", salario=" + salario + "]";
 	}
-    
-    
+
+
+    @Override //Anulação => Os métados erdandos da classe abstract serão anulados
+    public void exibirInformacao() {
+
+        primeiroNome = nome.substring(0, nome.indexOf(" "));
+        ultimoNome = nome.substring(nome.indexOf(" ")+1);
+
+        System.out.println("Prieiro nome: "+primeiroNome);
+        System.out.println("Último nome: "+ultimoNome);
+
+    }
 }
 

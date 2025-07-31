@@ -37,6 +37,8 @@ public class Aplicacao {
         System.out.println(pedro.calcularSalarioHorasExtras(40));
         System.out.println(pedro);
 
+        luisa.exibirInformacao();
+
 
     }
 }
